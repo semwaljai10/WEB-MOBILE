@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    <title>login and signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+      .gradient-form{
+        background: #fccb90;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right , #ee7724, #d8363a, #dd3675, #b44593);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+      }
+      .gradient-custom-2 {
+/* fallback for old browsers */
+background: #fccb90;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right ,#20B2AB,#1AA3A6,#1395A1,#0D869D);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right,#20B2AB,#1AA3A6,#1395A1,#0D869D);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
+    </style>
+</head>
+<body>
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+              <div class="card rounded-3 text-black">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="card-body p-md-5 mx-md-4">
+      
+                      <div class="text-center">
+                        <img src="logo.png"
+                          style="width: 185px;" alt="logo">
+                        <h4 class="mt-1 mb-5 pb-1">We are The Disaster Management Team</h4>
+                      </div>
+      
+                      <form>
+                        <center>
+                        <div class="align-items-center">
+                        <h2 class="fw-bold mb-2 text-uppercase ">Login</h2>
+                        <p class="text-50 mb-5">Please enter your username and password!</p>
+                      </center>
+      
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="username">Username</label>
+                          <input type="email" id="username" class="form-control"
+                            placeholder="Phone number or email address" />
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="password">Password</label>
+                          <input type="password" id="password" class="form-control" />
+                        </div>
+      
+                        <div class="text-center pt-1 mb-5 pb-1">
+                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" onclick="validate()">Login</button>
+                          <a class="text-muted" href="#!">Forgot password?</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                          <p class="mb-0 me-2">click here to return home page</p>
+                          <font color="white"><a href="index.html">Home Page</a></font>
+                        </div>
+      
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                          <p class="mb-0 me-2">Don't have an account?</p>
+                         <font color="white"><a href="RESGISTER.html">signup</a></font>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h4 class="mb-4">We are more than just a Organization</h4>
+                      <p class="small mb-0">"We are more than just an organization, we are a beacon of hope in times of calamity. As a disaster management organization, our purpose goes beyond mere existence; we are dedicated to saving lives, providing relief, and rebuilding communities.
+
+                        In the face of adversity, we stand strong and united, prepared to face any challenge head-on. Our mission is to serve, protect, and uplift those affected by disasters, be it natural or man-made. We believe that every life is valuable, and we strive to make a positive impact in the lives of those who need it the most.
+                        
+                        With a team of highly skilled professionals, state-of-the-art resources, and a compassionate heart, we are committed to responding swiftly to emergencies and providing immediate aid to those in distress. Our work extends far beyond the disaster itself, as we focus on long-term rehabilitation and reconstruction, ensuring that affected communities can rise stronger and more resilient than ever before.
+                        
+                        Our volunteers, donors, and partners play a crucial role in our journey, and together, we form an unbreakable bond of solidarity. It is through their unwavering support that we can continue to make a difference and restore hope to those facing unimaginable challenges.
+                        
+                        At the core of our identity lies a deep-rooted passion to serve humanity selflessly. We strive to empower individuals with knowledge, training, and resources to cope with disasters, fostering a culture of preparedness and resilience.
+                        
+                        In the midst of chaos, we are the calming presence, the helping hand, and the ray of hope. We are more than just an organization; we are a force for good, a lifeline for those in need, and a testament to the power of compassion and unity.
+                        
+                        Together, let us continue to be the catalyst for change and create a world where no disaster can overcome the strength of humanity and the spirit of solidarity."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        var attempt=3;
+        function validate(){
+            var username= document.getElementById("username").value;
+            var password= document.getElementById("password").value;
+            if(username=="vtu19997" && password=="jai"){
+                alert("login succesfull");
+                window.location="home_portal.html";
+                return false;
+            }
+            else{
+                attempt--;
+                alert("Incorrect password!! you have left" +attempt+ "attempt");
+                if(attempt==0){
+                document.getElementById("username").disabled=true;
+                document.getElementById("password").disabled=true;
+                document.getElementById("submit").disabled=true;
+                return false;
+            }
+            }
+        }
+      </script>
+</body>
+    

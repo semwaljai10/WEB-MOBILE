@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        SIGN UP
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="text-bg-secondary p-3">
+    
+    <form action="/register" method="post">
+      <fieldset>
+      <center>
+        <section class="vh-200 gradient-custom text-bg-secondary">
+          <div class="container py-5 h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <h2 class="fw-bold mb-2 text-uppercase">SIGN UP</h2>
+                    <p class="text-white-50 mb-5">PLEASE ENTER YOUR DETAILS FOR REGISTRATION:</p>
+                    <div class="form-outline form-white mb-4">
+                      <label for="formFile" class="col-form-label">ENTER YOUR FIRST NAME:</label>
+                      <input class="text" name="fname" id="first_name" class="form-control" placeholder="first name" >
+                      <br>
+                      <br>
+                      <label for="formFile"  class="col-form-label">ENTER YOUR SURNAME :</label>
+                      <input class="text" name="sname" id=" last_name" class="form-control" placeholder="surname" >
+                      <br>
+                      <br>
+                      <label for="formFile" class="col-form-label">ENTER YOUR CONTACT NUMBER :</label>
+                      <input type="tel" id=" mobile"  name="mobile" class="form-control" placeholder="contact number"  maxlength="10" >
+                      <br>
+                      <br>
+                      <label>SELECT GENDER:</label>
+                      <input type="radio" class="form-check-input" id="MALE" name="gender" value="male" >
+                      <label class="form-check-label" for="MALE">MALE</label>
+                      <input type="radio" class="form-check-input" id="FEMALE" name="gender" value="female" >
+                      <label class="form-check-label" for="FEMALE">FEMALE</label>
+                      <input type="radio" class="form-check-input" id="other" name="gender" value="other" >
+                      <label class="form-check-label" for="other">OTHERS</label>
+                      <div class="invalid-feedback"></div>
+                      <div class="col-auto">
+                        <label for="state" class="col-form-label">State:</label>
+                        <select class="form-select" id="state"  name="state">
+                          <option selected disabled value="">Choose...</option>
+                          <option>Andhra Pradesh</option>
+                          <option>Arunachal Pradesh</option>
+                          <option>Assam</option>
+                          <option>Bihar</option>
+                          <option>Chhattisgarh</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Haryana</option>
+                          <option>Himachal Pradesh</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
+                          <option>Kerala</option>
+                          <option>Madhya Pradesh</option>
+                          <option>Maharashtra</option>
+                          <option>Manipur</option>
+                          <option>Meghalya</option>
+                          <option>Mizoram</option>
+                          <option>Nagaland</option>
+                          <option>Odisha</option>
+                          <option>Punjab</option>
+                          <option>Rajasthan</option>
+                          <option>Sikkim</option>
+                          <option>Tamil Nadu</option>
+                          <option>Telangan</option>
+                          <option>Tripura</option>
+                          <option>Uttar Pradesh</option>
+                          <option>Uttarakhand</option>
+                          <option>West Bengal</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                        <br>
+                        <br>
+                        <label for="formfile" class="col-form-label">ENTER YOUR CITY:</label>
+                        <input type="text" id="city" class="form-control" name="city" placeholder="city" >
+                        <br>
+                        <br>
+                        <label>SELECT DATE OF BIRTH:</label>
+                        <input type="date" id="dateofbirth"  name="dateofbirth" class="col-form-label">
+                        <br>
+                        <br>
+                        <label for="EMAIL" class="col-form-label">ENTER E-MAIL ADDRESS:</label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="email address" >
+                        <br>
+                        <label for="username" class="col-form-label"> ENTER YOUR USERNAME:</label>
+                        <input type="text"  id="username" class="form-control"  name="username" placeholder="User name" >
+                        <br>
+                        <label for="PASSWORD" class="col-form-label"> ENTER YOUR PASSWORD:</label>
+                        <input type="password"  id="password" class="form-control"  name="password" placeholder="password" >
+                        <br>
+                        <label for="formFile" class="col-form-label">AADHAR ID:</label>
+                        <input type="file"id="aadhar" class="form-control"  >
+                        <br>
+                        <label for="formFile" class="col-form-label">PAN ID:</label>
+                        <input type="file" id="pan"class="form-control"  >
+                        <br>
+                        <label for="formFile" class="col-form-label">HIGHEST EDUCATION QUALIFICATION :</label>
+                        <input type="file"id="education" class="form-control">
+                        <br>
+                        <label for="formFile" class="col-form-label">VOTER ID:</label>
+                        <input type="file" id="voter"class="form-control" >
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
+                        <label class="form-check-label" for="invalidCheck">
+                        AGREE TO TERMS AND CONDITIONS.
+                        </label>
+                        <div class="invalid-feedback">
+                        YOU MUST AGREE BEFORE SUBMITTING.
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-auto">
+                          <button class="btn btn-primary"><font face="verdana" color="white">Sign up</font></button>
+                          <br>
+                          <br>
+                          <label class="text-white-50 mb-5">Already have an account, click sign in</label>
+                          
+                          <button class="btn bg-dark"><a href="sign_in&sign_up.html">Sign in</a></button>
+                          <br>
+                          <button class="btn bg-dark"><a href="index.html">Home Page</a></button>   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </center>
+    </fieldset>
+    </form>   
+  </div>      
+</body>
